@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linda Reji- Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Linda Reji
+          <div class="contact_info">
+            <img src="mail.png" class="icon"alt="mail"/>
+          lindareji20@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="telephone.png" class="icon" alt="phone"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+           <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+             <a class="topmenu" href="#recommendation">Recommendation</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="propic.png.png" class="profile_image" alt="Linda Reji"/>
+    
+          <h1>
+            Hi, I'm Linda Reji!
+          </h1>
+          <p>
+            <p>
+  Hello! I'm Linda Reji, a Computer Science graduate with a passion for Software Development, Web Technologies, and Artificial Intelligence.
+  Through academic projects, I have gained hands-on experience in developing innovative solutions, including an Elder Care Web Application, a Blood Management System, and a Tea Leaf Disease Detection System using Deep Learning.
+  My technical skills include HTML, CSS, JavaScript, Python, SQL, Database Management Systems and Machine Learning.
+  I enjoy solving real-world problems through technology and continuously learning new tools and technologies to enhance my skills as a software professional.
+</p>
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html.jpeg" alt="html"/>
+          <h4>HTML</h4>
+        </div>  
+
+        <div class="skill">
+          <img src="js.jpeg" alt="js"/>
+          <h4>JavaScript</h4>
+        </div>  
+
+        <!-- Add more skills here -->
+ <div class="skill">
+          <img src="css.jpeg" alt="css"/>
+          <h4>CSS</h4>
+        </div> 
+         <div class="skill">
+          <img src="python.jpeg"/>
+          <h4>Python</h4>
+        </div> 
+         <div class="skill">
+          <img src="c.jpeg"/>
+          <h4>C</h4>
+        </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Tea leaf disease detection using DL</h3>
+            <ul>
+              <li>Developed a Tea Leaf Disease Detection System using the YOLOv8 Nano deep learning model to identify and classify diseases in tea leaves from images, enabling early diagnosis and improved crop health management.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>elder-care website</h3>
+            <ul>
+              <li>Developed an Elder Care Web Application using HTML, CSS, JavaScript, and PHP to assist elderly users with essential healthcare services, including medicine reminders, emergency support, and health-related assistance.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Blood Bank Management System</h3>
+            <ul>
+              <li>
+Developed a Blood Bank Management System using HTML, CSS, JavaScript, Python Flask, and MySQL to efficiently manage donor records, blood inventory, blood requests, and recipient information.
+</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          
+          "Linda is a dedicated and enthusiastic individual with excellent problem-solving abilities. She consistently demonstrates strong technical knowledge and a commitment to delivering quality work."
+          
+        </div>
+        <div class="recommendation">
+          <span></span>
+         "Working with Linda has been a great experience. She is hardworking, quick to learn new technologies, and always contributes innovative ideas to projects."
+  <span></span>
+          
+        </div>
+        <div class="recommendation">
+          
+         "Linda possesses strong analytical and technical skills. Her dedication, teamwork, and ability to handle responsibilities make her a valuable contributor to any project."
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="tick.jpeg" alt="success">
+      <h3>Thankyou for your recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
